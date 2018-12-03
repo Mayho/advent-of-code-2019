@@ -7,5 +7,5 @@ const main = (() => console.log(
         .toString()
         .split('\n')
         .map(e => parseInt(e))
-        .reduce((a, b) => a + b)
+        .reduce((a, b) => { console.log(a + b); return a + b })
 ))()
